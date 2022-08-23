@@ -9,5 +9,6 @@ const clickEvent = (event)=>{
     console.log('hey');
     $('.panel').removeClass('active');
     $(event.currentTarget).addClass('active');
+    
 }
 
