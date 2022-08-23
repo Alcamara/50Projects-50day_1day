@@ -2,10 +2,12 @@ $(document).ready(readyNow);
 
 function readyNow(){
     console.log('test');
-    $('.panel').on('click',clickEvent);
+    $('.container').on('click','.panel',clickEvent);
 }
 
-const clickEvent = ()=>{
-    console.log('click panel');
+const clickEvent = (event)=>{
+    console.log('hey');
+    $('.panel').removeClass('active');
+    $(event.currentTarget).addClass('active');
 }
 
